@@ -9,11 +9,16 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.view.View;
-
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Stack;
+
+//
+// Daniel Cole
+// 1870787
+// cole149@mail.chapman.edu
+// cpsc356-f2017
+// Assignment 2
 
 public class MainActivity extends AppCompatActivity
 {
