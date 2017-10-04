@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
     android:id="@+id/mainLayout"
     >
-
     <TextView
         android:id="@+id/topLeftNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A"
         android:textColor="@color/red"
-        android:layout_gravity="top|start"
         android:textSize="100sp"
         />
-
 
     <ImageView android:id="@+id/topLeftSuit"
         android:layout_width="wrap_content"
@@ -24,9 +19,8 @@
         android:layout_marginStart="16.0dp"
         android:scaleX="2.0"
         android:scaleY="2.0"
-        android:layout_gravity="start"
+        android:layout_below="@+id/topLeftNumber"
         />
-
     <ImageView android:id="@+id/middleSuit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,18 +28,7 @@
         android:scaleX="5.0"
         android:scaleY="5.0"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="100dp"
-        />
-
-    <ImageView android:id="@+id/bottomRightSuit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/redheart"
-        android:layout_marginEnd="16.0dp"
-        android:scaleX="2.0"
-        android:scaleY="-2.0"
-        android:layout_gravity="end"
+        android:layout_centerInParent="true"
         />
 
     <TextView
@@ -58,8 +41,19 @@
         android:scaleX="-1"
         android:layout_gravity="bottom|end"
         android:textSize="100sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
         />
 
+    <ImageView android:id="@+id/bottomRightSuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/redheart"
+        android:layout_marginEnd="16.0dp"
+        android:scaleX="2.0"
+        android:scaleY="-2.0"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/bottomRightNumber"
+        />
 
-
-</LinearLayout>
+</RelativeLayout>
